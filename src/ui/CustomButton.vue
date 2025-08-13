@@ -40,7 +40,6 @@ export default {
     buttonClasses() {
       let classes = 'font-medium rounded-lg transition-colors duration-200 focus:outline-none'
 
-      // Tamanhos
       if (this.size === 'small') {
         classes += ' px-6 py-2 text-base'
       } else if (this.size === 'medium') {
@@ -49,7 +48,6 @@ export default {
         classes += ' px-6 py-3 text-lg'
       }
 
-      // Tipos/cores
       if (this.disabled) {
         classes += ' bg-gray-300 text-gray-500 cursor-not-allowed'
       } else {

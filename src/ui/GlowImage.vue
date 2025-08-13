@@ -49,7 +49,6 @@ img {
   transition: all 0.3s ease;
 }
 
-/* Responsividade do glow effect */
 @media (max-width: 640px) {
   .glow {
     border-width: 1.5px;
@@ -95,7 +94,6 @@ img {
   }
 }
 
-/* Hover effect para desktop */
 @media (min-width: 1024px) {
   .glow:hover {
     transform: scale(1.05);

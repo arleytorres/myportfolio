@@ -8,7 +8,6 @@
       </div>
 
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
-        <!-- Primeira Coluna -->
         <div class="space-y-6">
           <SkillsCard
               title="Backend"
@@ -23,8 +22,6 @@
               progress-bar-color="bg-red-500"
           />
         </div>
-
-        <!-- Segunda Coluna -->
         <div class="space-y-6">
           <SkillsCard
               title="Banco de Dados"
@@ -87,21 +84,18 @@ export default {
   line-height: 1.2;
 }
 
-/* Mobile */
 @media (max-width: 640px) {
   .skills {
     font-size: 1.5rem;
   }
 }
 
-/* Tablet */
 @media (min-width: 641px) and (max-width: 1023px) {
   .skills {
     font-size: 1.875rem;
   }
 }
 
-/* Desktop */
 @media (min-width: 1024px) {
   .skills {
     font-size: 2.25rem;

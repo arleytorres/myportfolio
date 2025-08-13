@@ -1,14 +1,10 @@
 <template>
   <section id="experience" class="min-h-screen bg-[#080C17] w-full flex justify-center items-center text-white py-8 sm:py-12 md:py-16 lg:py-20">
     <div class="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-7 relative w-full">
-
       <main class="grid grid-cols-1 gap-6 sm:gap-8 md:gap-10 lg:gap-12">
-        <!-- Título responsivo -->
         <h2 class="experiencia text-white text-2xl sm:text-3xl lg:text-4xl lg:text-left -mb-7">
           Experiência
         </h2>
-
-        <!-- Cards com espaçamento responsivo -->
         <div class="space-y-6 sm:space-y-6 md:space-y-6 lg:space-y-6">
           <ExperienceCards
               titulo="Gerador de Propostas Comerciais"
@@ -92,7 +88,6 @@ export default {
   font-family: 'Playfair Display', serif;
 }
 
-/* Breakpoints personalizados para garantir responsividade */
 @media (max-width: 480px) {
   .experiencia {
     font-size: 28px;

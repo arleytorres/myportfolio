@@ -2,8 +2,6 @@
   <section id="about" class="bg-[#080C17] py-12 sm:py-16 lg:py-20 w-full">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
-
-        <!-- Content Section -->
         <div class="space-y-4 sm:space-y-6">
           <h2 class="sobre text-white text-2xl sm:text-3xl lg:text-4xl mb-4 sm:mb-6">Sobre</h2>
 
@@ -16,7 +14,6 @@
               Ao longo da minha trajetória, atuei aplicando amplamente os princípios SOLID, LINQ e bancos de dados relacionais como SQL Server, SQLite e MySQL, sempre buscando soluções eficientes, bem estruturadas e com foco em escalabilidade.
             </p>
           </div>
-
           <div class="pt-4">
             <custom-button
                 text="Download CV"
@@ -27,20 +24,16 @@
             />
           </div>
         </div>
-
-        <!-- Info Section -->
         <div class="space-y-3 sm:space-y-4 lg:mt-16">
           <div class="text-white space-y-2 sm:space-y-3 text-sm sm:text-base">
             <div class="flex flex-col sm:flex-row sm:items-center">
               <span class="font-medium text-gray-400 min-w-[120px]">Localização:</span>
               <span class="text-white">Garanhuns, PE</span>
             </div>
-
             <div class="flex flex-col sm:flex-row sm:items-center">
               <span class="font-medium text-gray-400 min-w-[120px]">Disponibilidade:</span>
               <span class="text-white">Remoto ou Híbrido</span>
             </div>
-
             <div class="flex flex-col sm:flex-row sm:items-start">
               <span class="font-medium text-gray-400 min-w-[120px]">Idiomas:</span>
               <span class="text-white">Português (nativo)<br class="sm:hidden">Inglês (intermediário)</span>
@@ -106,7 +99,6 @@ export default {
   line-height: 1.2;
 }
 
-/* Mobile optimizations */
 @media (max-width: 640px) {
   .nome {
     font-size: 1.6rem;
@@ -116,7 +108,6 @@ export default {
   }
 }
 
-/* Tablet */
 @media (min-width: 641px) and (max-width: 768px) {
   .nome {
     font-size: 2.2rem;
@@ -126,7 +117,6 @@ export default {
   }
 }
 
-/* Desktop */
 @media (min-width: 769px) {
   .nome {
     font-size: 2.8rem;

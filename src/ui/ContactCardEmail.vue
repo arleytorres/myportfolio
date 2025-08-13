@@ -2,14 +2,12 @@
   <div class="flex bg-[#0A101F] h-125 w-full p-6 rounded-2xl border border-slate-700 shadow-2xl shadow-cyan-900/30">
     <main class="text-white w-full">
 
-      <!-- Mensagem de Sucesso -->
       <transition name="fade">
         <div v-if="showSuccess" class="mb-4 bg-green-900/30 border border-green-700 text-green-400 px-4 py-3 rounded-lg text-center">
           ✅ {{ successMessage }}
         </div>
       </transition>
 
-      <!-- Campo Nome -->
       <div class="mb-6">
         <p class="ml-1 mb-2">Nome <span class="text-red-400">*</span></p>
         <input
@@ -23,7 +21,6 @@
         <span v-if="errors.userName" class="text-red-400 text-sm mt-1 block">{{ errors.userName }}</span>
       </div>
 
-      <!-- Campo Email -->
       <div class="mb-6">
         <p class="ml-1 mb-2">Email <span class="text-red-400">*</span></p>
         <input
@@ -37,7 +34,6 @@
         <span v-if="errors.userEmail" class="text-red-400 text-sm mt-1 block">{{ errors.userEmail }}</span>
       </div>
 
-      <!-- Campo Mensagem -->
       <div class="mb-6">
         <p class="ml-1 mb-2">Mensagem <span class="text-red-400">*</span></p>
         <textarea
@@ -50,7 +46,6 @@
         <span v-if="errors.userMessage" class="text-red-400 text-sm mt-1 block">{{ errors.userMessage }}</span>
       </div>
 
-      <!-- Botão Preview -->
       <button
           v-if="isFormValid"
           @click="togglePreview"
@@ -60,7 +55,6 @@
         📋 {{ showPreview ? 'Ocultar' : 'Visualizar' }} Email
       </button>
 
-      <!-- Preview do Email -->
       <transition name="slide-down">
         <div v-if="showPreview && isFormValid" class="mb-6 bg-slate-800/50 border border-slate-600 rounded-lg p-4">
           <h3 class="text-cyan-400 font-semibold mb-3">📧 Prévia do Email:</h3>
@@ -76,7 +70,6 @@
         </div>
       </transition>
 
-      <!-- Botão Enviar -->
       <custom-button
           :type="isFormValid ? 'primary' : 'disabled'"
           :text="isLoading ? 'Enviando...' : 'Enviar'"
@@ -126,7 +119,6 @@ export default {
           this.isValidEmail(this.form.userEmail);
     },
 
-    // Gera o assunto do email
     emailSubject() {
       return `Contato do site - ${this.form.userName || 'Visitante'}`;
     },
@@ -205,7 +197,6 @@ Para responder, utilize o email: ${this.form.userEmail}`;
       }, 800);
     },
 
-    // Mostrar mensagem de sucesso
     showSuccessMessage(message) {
       this.successMessage = message;
       this.showSuccess = true;
@@ -215,7 +206,6 @@ Para responder, utilize o email: ${this.form.userEmail}`;
       }, 5000);
     },
 
-    // Resetar formulário (método opcional)
     resetForm() {
       this.form = {
         userName: '',
@@ -235,7 +225,6 @@ Para responder, utilize o email: ${this.form.userEmail}`;
 </script>
 
 <style scoped>
-/* Transições personalizadas */
 .fade-enter-active, .fade-leave-active {
   transition: opacity 0.3s ease;
 }
@@ -257,12 +246,10 @@ Para responder, utilize o email: ${this.form.userEmail}`;
   transform: translateY(-10px);
 }
 
-/* Estilos adicionais para melhor UX */
 input:focus, textarea:focus {
   box-shadow: 0 0 0 3px rgba(6, 182, 212, 0.1);
 }
 
-/* Animação no placeholder */
 input::placeholder, textarea::placeholder {
   transition: color 0.3s ease;
 }

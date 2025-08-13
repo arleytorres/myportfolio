@@ -5,8 +5,6 @@
       <h2 class="projetos text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl mb-6 sm:mb-8 md:mb-10 lg:mb-12 lg:text-left">
         Projetos
       </h2>
-
-      <!-- Grid responsivo dos cards -->
       <div class="grid grid-cols-1 xl:grid-cols-2 gap-6 sm:gap-8 md:gap-10 lg:gap-12 xl:gap-7 w-full">
         <ProjectsCards
             class="w-full"
@@ -70,7 +68,6 @@ export default {
   font-family: 'Playfair Display', serif;
 }
 
-/* Breakpoints personalizados para tipografia */
 @media (max-width: 480px) {
   .projetos {
     font-size: 28px;

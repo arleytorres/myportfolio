@@ -15,43 +15,35 @@
 export default {
   name: 'TypewriterText',
   props: {
-    // Array de palavras/frases para alternar
     words: {
       type: Array,
       required: true,
       default: () => ['Texto exemplo']
     },
-    // Velocidade de digitação (ms)
     typeSpeed: {
       type: Number,
       default: 80
     },
-    // Velocidade de apagar (ms)
     deleteSpeed: {
       type: Number,
       default: 40
     },
-    // Pausa entre palavras (ms)
     pauseTime: {
       type: Number,
       default: 1200
     },
-    // Mostrar cursor piscando
     showCursor: {
       type: Boolean,
       default: true
     },
-    // Caractere do cursor
     cursor: {
       type: String,
       default: '▌'
     },
-    // Classe CSS adicional para o cursor
     cursorClass: {
       type: String,
       default: 'animate-pulse text-cyan-400'
     },
-    // Auto start (iniciar automaticamente)
     autoStart: {
       type: Boolean,
       default: true
@@ -118,7 +110,6 @@ export default {
       const currentWord = this.words[this.currentWordIndex];
 
       if (this.isDeleting) {
-        // Apagando caracteres
         this.displayText = currentWord.substring(0, this.currentCharIndex - 1);
         this.currentCharIndex--;
 
@@ -131,12 +122,10 @@ export default {
 
         this.timeoutId = setTimeout(() => this.type(), this.deleteSpeed);
       } else {
-        // Escrevendo caracteres
         this.displayText = currentWord.substring(0, this.currentCharIndex + 1);
         this.currentCharIndex++;
 
         if (this.currentCharIndex === currentWord.length) {
-          // Palavra completa, pausar antes de apagar
           this.timeoutId = setTimeout(() => {
             this.isDeleting = true;
             this.type();
@@ -147,7 +136,6 @@ export default {
         this.timeoutId = setTimeout(() => this.type(), this.typeSpeed);
       }
 
-      // Emitir eventos para o componente pai
       this.$emit('typing', {
         text: this.displayText,
         wordIndex: this.currentWordIndex,
