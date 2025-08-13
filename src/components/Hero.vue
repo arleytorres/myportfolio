@@ -1,6 +1,6 @@
 <template>
   <section id="hero">
-    <div class="min-h-[70vh] sm:min-h-[75vh] lg:min-h-[80vh] bg-[#0B1324] relative overflow-hidden flex items-center pt-24 pb-8">
+    <div class="min-h-[70vh] sm:min-h-[75vh] lg:min-h-[60vh] bg-[#0B1324] relative overflow-hidden flex items-center pt-24 pb-8">
       <div class="w-full h-full z-2 bg-black/10 backdrop-blur-sm absolute"/>
 
       <!-- Decorative Elements -->
