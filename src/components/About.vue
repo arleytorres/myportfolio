@@ -36,7 +36,7 @@ export default {
   methods: {
     curriculo() {
       const link = document.createElement('a');
-      link.href = '/src/assets/documents/Curriculo.pdf';
+      link.href = '/public/documents/Curriculo.pdf';
       link.download = 'CV_Arley_Torres.pdf';
       link.click();
     }

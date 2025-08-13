@@ -2,7 +2,7 @@
   <div class="flex justify-center mt-[-50px]">
     <div class="glow">
       <img
-          src="../assets/images/minha_foto.png"
+          src="../../public/images/minha_foto.png"
           alt="Minha Foto"
           class="w-70 h-70 rounded-xl opacity-100 brightness-100"
       />
