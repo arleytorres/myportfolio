@@ -8,13 +8,13 @@
           <p class="mt-4 mb-2 text-white">Localização: Garanhuns, PE</p>
           <div class="flex flex-row mb-2">
             <a href="https://www.linkedin.com/in/arleytorres/" target="_blank">
-              <img src="/public/icons/linkedin.png" alt="Linkedin" class="scale-100 cursor-pointer hover:scale-110 duration-200"/>
+              <img src="/icons/linkedin.png" alt="Linkedin" class="scale-100 cursor-pointer hover:scale-110 duration-200"/>
             </a>
             <a href="https://github.com/arleytorres" target="_blank">
-              <img src="/public/icons/icons8-github-48.png" alt="github" class="scale-65 cursor-pointer hover:scale-75 duration-200"/>
+              <img src="/icons/icons8-github-48.png" alt="github" class="scale-65 cursor-pointer hover:scale-75 duration-200"/>
             </a>
             <a href="mailto:arley_emanuel@hotmail.com" target="_blank">
-              <img src="/public/icons/icons8-nova-mensagem-48.png" alt="email" class="scale-90 cursor-pointer hover:scale-100 duration-200"/>
+              <img src="/icons/icons8-nova-mensagem-48.png" alt="email" class="scale-90 cursor-pointer hover:scale-100 duration-200"/>
             </a>
           </div>
         </div>

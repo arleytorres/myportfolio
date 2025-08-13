@@ -3,7 +3,7 @@
     <div class="flex items-center gap-1 mb-6">
       <div class="w-6 h-6 overflow-hidden">
         <img
-            :src="'/public/icons/' + imagem"
+            :src="'/icons/' + imagem"
             :alt="icones"
             class="w-full h-full object-contain"
         />

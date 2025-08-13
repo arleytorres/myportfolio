@@ -2,7 +2,7 @@
   <div class="bg-[#0A101F] rounded-2xl p-6 border border-slate-700 shadow-2xl shadow-cyan-900/20 transition-all duration-300 hover:transform hover:scale-[1.02] hover:shadow-lg hover:shadow-cyan-900">
     <div class="w-full mb-6">
       <img
-          :src="'/public/images/' + imagem"
+          :src="'/images/' + imagem"
           :alt="titulo"
           class="w-full h-[300px] object-cover rounded-2xl"
       />
@@ -43,7 +43,7 @@ export default {
     tecnologias: Array,
     imagem: {
       type: String,
-      default: "/assets/images/imagem_padrão.png"
+      default: "/images/imagem_padrão.png"
     },
     buttom: {
       type: Boolean,
