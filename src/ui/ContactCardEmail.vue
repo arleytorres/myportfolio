@@ -95,7 +95,7 @@ export default {
 
   data() {
     return {
-      myEmail: 'arley_emanuel@hotmail.com',
+      myEmail: 'contato@torresdev.online',
 
       form: {
         userName: '',
