@@ -27,7 +27,7 @@
                   class="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 cursor-pointer"
               />
             </a>
-            <a href="mailto:arley_emanuel@hotmail.com" target="_blank" class="transition-transform hover:scale-110 duration-200">
+            <a href="mailto:contato@torresdev.online" target="_blank" class="transition-transform hover:scale-110 duration-200">
               <img
                   src="/icons/icons8-nova-mensagem-48.png"
                   alt="email"
